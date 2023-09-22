@@ -29,14 +29,14 @@ class _StoryPageState extends State<StoryPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 50),
-      constraints: BoxConstraints.expand(),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 50),
+      constraints: const BoxConstraints.expand(),
       
       child: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Expanded(
+            const Expanded(
               flex: 12,
               child: Center(
                 child: Text(
@@ -50,23 +50,23 @@ class _StoryPageState extends State<StoryPage> {
               flex: 2,
               child: TextButton(
                 style: TextButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 13, 190, 182)),
-                child: Text(
+                    backgroundColor: const Color.fromARGB(255, 13, 190, 182)),
+                child: const Text(
                   'Choice 1',
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
                 onPressed: () {},
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Expanded(
               flex: 2,
               child: TextButton(
                 style: TextButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 25, 190, 121)),
-                child: Text(
+                    backgroundColor: const Color.fromARGB(255, 25, 190, 121)),
+                child: const Text(
                   'Choice 2',
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
